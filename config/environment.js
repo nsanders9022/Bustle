@@ -18,10 +18,11 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: 'AIzaSyD7OfpJQgyYrzsj95jPEqA1MY6U2uDo8Go',
-      authDomain: 'bustle-bb5ca.firebaseapp.com',
-      databaseURL: 'https://bustle-bb5ca.firebaseio.com',
-      storageBucket: 'bustle-bb5ca.appspot.com',
+      apiKey: "AIzaSyD7OfpJQgyYrzsj95jPEqA1MY6U2uDo8Go",
+      authDomain: "bustle-bb5ca.firebaseapp.com",
+      databaseURL: "https://bustle-bb5ca.firebaseio.com",
+      storageBucket: "bustle-bb5ca.appspot.com",
+      messagingSenderId: "94871104144"
     },
 
     APP: {

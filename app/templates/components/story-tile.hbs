@@ -1,3 +1,5 @@
-{{story.title}}<br>
-{{story.author}}<br>
-{{story.image}}
+{{#link-to 'story' story.id}}
+  {{story.title}}<br>
+  {{story.author}}<br>
+  {{story.image}}
+{{/link-to}}
