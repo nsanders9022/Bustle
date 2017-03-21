@@ -6,3 +6,7 @@
 <h5>{{model.date}}</h5>
 
 <p>{{model.text}}</p>
+
+<button {{action 'deleteStory' model}}>Delete Story</button>
+
+{{update-story story=model update='update'}}

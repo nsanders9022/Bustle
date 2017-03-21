@@ -1,12 +1,5 @@
 {{#each model as |story|}}
-{{action 'counter'}}
-  {{#if counterCheck}}
     <div class="small-block">
       {{story-tile story=story}}
     </div>
-  {{else}}
-  <div class="large-block">
-    {{story-tile story=story}}
-  </div>
-  {{/if}}
 {{/each}}
