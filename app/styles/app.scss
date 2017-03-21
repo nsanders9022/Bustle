@@ -1,8 +1,28 @@
 // $gradient: linear-gradient(90deg, blue, red);
 $gradient: blue;
 
+.test-div {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  display: none;
+}
+
 body {
   padding-bottom: 5%;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: none;
+  left: 0px;
+}
+
+#menu-button{
+  width: 5%;
+  height: 15%;
 }
 
 .featured {
@@ -24,7 +44,7 @@ body {
   position: relative;
   width: 112%;
   height: 60%;
-  background: linear-gradient(90deg, blue, red);
+  background: linear-gradient(90deg, green, blue);
   padding: 1%;
   margin-left: 15%;
   left: -21%;

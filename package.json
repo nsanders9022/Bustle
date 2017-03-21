@@ -39,6 +39,7 @@
     "ember-source": "~2.12.0",
     "ember-welcome-page": "^2.0.2",
     "emberfire": "^2.0.6",
+    "jquery": "^3.2.1",
     "loader.js": "^4.2.3"
   },
   "engines": {
