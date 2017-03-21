@@ -8,7 +8,6 @@ export default Ember.Component.extend({
     },
 
     saveStory() {
-      debugger;
       var params = {
         title: this.get('title'),
         author: this.get('author'),
