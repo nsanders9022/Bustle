@@ -2,9 +2,18 @@
 
 {{#link-to 'index'}}<h1>Bustle Clone</h1>{{/link-to}}
 <hr>
+<img id="menu-button" {{action 'showNav'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" alt="menu" />
 
+<div class="nav-bar">
+<ul>
+  <li>{{#link-to 'submit'}}Submit stories{{/link-to}}</li>
+  <li>About</li>
+  <li>About</li>
+  <li>About</li>
+  <li>About</li>
+</ul>
+</div>
 {{outlet}}
 
 <hr>
-{{#link-to 'submit'}}Submit stories{{/link-to}}
 </div>

@@ -1,23 +1,34 @@
 // $gradient: linear-gradient(90deg, blue, red);
 $gradient: blue;
 
-.test-div {
-  height: 100px;
-  width: 100px;
-  background-color: orange;
-  display: none;
+html {
+  height: 100%;
+  width: 100%;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5 !important;
+}
+
 
 body {
   padding-bottom: 5%;
 }
 
 .nav-bar {
-  position: absolute;
-  width: 100%;
-  height: auto;
+  position: fixed;
+  width: 20%;
+  height: 100%;
   display: none;
-  left: 0px;
+  top: 0;
+  left: 0%;
+  margin-left: -10%;
+  background: linear-gradient(180deg, #c1ffcb, #c1f7ff);
+  z-index: 4;
+  padding: 2% 0% 0% 6%;
+  border-right: 1px solid #db6d6d;
 }
 
 #menu-button{
@@ -44,7 +55,7 @@ body {
   position: relative;
   width: 112%;
   height: 60%;
-  background: linear-gradient(90deg, green, blue);
+  background: linear-gradient(90deg, #c1ffcb, #c1f7ff);
   padding: 1%;
   margin-left: 15%;
   left: -21%;
@@ -54,22 +65,25 @@ body {
 
 img {
   max-width: 100%;
+  border: 1px solid #59757a;
+  border-radius: 2px;
 }
 h1 {
   text-align: center;
 }
 
 .text-box {
-  padding: 0 10% 0 2%;
+  padding: 3% 10% 0 2%;
   text-align: justify;
 }
 
 .article-tile {
   max-width: 80%;
+  background-color: #f9f9f9;
 }
 
-a, a:hover {
-  text-decoration: none;
+a, a:hover, a:visited {
+  text-decoration: none !important;
 }
 
 .btn {

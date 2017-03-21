@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
     showNav: function() {
       Ember.$(".nav-bar").animate({"left":"0px"}, 0);
-      Ember.$(".nav-bar").toggle().animate({"left":"50px"}, "slow");
+      Ember.$(".nav-bar").toggle().animate({"left":"7%"}, "slow");
     }
   }
 });
