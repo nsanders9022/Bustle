@@ -1,0 +1,59 @@
+// $gradient: linear-gradient(90deg, blue, red);
+$gradient: blue;
+
+body {
+  padding-bottom: 5%;
+}
+
+.featured {
+  width: 100%;
+}
+
+.featured-text {
+  position: relative;
+  top: -100px;
+  background-color: white;
+  height: auto;
+  padding: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  z-index: 3;
+}
+
+.background-gradient {
+  position: relative;
+  width: 112%;
+  height: 60%;
+  background: linear-gradient(90deg, blue, red);
+  padding: 1%;
+  margin-left: 15%;
+  left: -21%;
+  top: -150px;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+}
+h1 {
+  text-align: center;
+}
+
+.text-box {
+  padding: 0 10% 0 2%;
+  text-align: justify;
+}
+
+.article-tile {
+  max-width: 80%;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 1%
+}
+
+@import "ember-bootstrap/bootstrap";

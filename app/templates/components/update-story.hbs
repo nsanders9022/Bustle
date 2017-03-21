@@ -4,37 +4,37 @@
   <form>
     <div class="form-group">
       <label for="title">Title</label>
-      {{input value=story.title id="title"}}
+      {{input class="form-control" value=story.title id="title"}}
     </div>
 
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=story.author id="author"}}
+      {{input class="form-control" value=story.author id="author"}}
     </div>
 
     <div class="form-group">
       <label for="description">Short Description</label>
-      {{input value=story.description id="description"}}
+      {{input class="form-control" value=story.description id="description"}}
     </div>
 
     <div class="form-group">
       <label for="image">Image URL</label>
-      {{input value=story.image id="image"}}
+      {{input class="form-control" value=story.image id="image"}}
     </div>
 
     <div class="form-group">
       <label for="date">Date</label>
-      {{input value=story.date id="date"}}
+      {{input class="form-control" value=story.date id="date"}}
     </div>
 
     <div class="form-group">
       <label for="article">Full Text</label>
-      {{input value=story.text id="article"}}
+      {{input class="form-control" value=story.text id="article"}}
     </div>
 
-    <button {{action 'update' story}}>Save</button>
+    <button class="btn btn-primary" {{action 'update' story}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'updateStoryFormShow'}}>Update Story</button>
+  <button class="btn btn-primary" {{action 'updateStoryFormShow'}}>Update Story</button>
 {{/if}}

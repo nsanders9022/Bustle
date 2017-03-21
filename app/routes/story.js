@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('story', params.story_id);
+    var modelMaker = this.store.findRecord('story', params.story_id);
+    // var newText = grabText.substring(0, 200);
+    return {story: modelMaker};
   },
   actions: {
     update(story, params) {

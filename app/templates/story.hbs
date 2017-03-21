@@ -1,12 +1,15 @@
-<h2>{{model.title}}</h2>
+<h2>{{model.story.title}}</h2>
 
-<img src={{model.image}}>
+<img src={{model.story.image}}>
+<div class="story-title">
+  <h5>{{model.story.author}}</h5>
+  <h5>{{model.story.date}}</h5>
+</div>
 
-<h5>{{model.author}}</h5>
-<h5>{{model.date}}</h5>
+<div class="story-text">
+  <p>{{model.story.text}}</p>
+</div>
 
-<p>{{model.text}}</p>
+<button class="btn btn-primary"{{action 'deleteStory' model.story}}>Delete Story</button>
 
-<button {{action 'deleteStory' model}}>Delete Story</button>
-
-{{update-story story=model update='update'}}
+{{update-story story=model.story update='update'}}

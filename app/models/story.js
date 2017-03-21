@@ -6,5 +6,6 @@ export default DS.Model.extend({
   description: DS.attr(),
   image: DS.attr(),
   date: DS.attr(),
-  text: DS.attr()
+  text: DS.attr(),
+  featured: DS.attr()
 });

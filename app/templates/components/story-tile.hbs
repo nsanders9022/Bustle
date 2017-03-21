@@ -1,6 +1,36 @@
-{{#link-to 'story' story.id}}
-  {{story.title}}<br>
-  {{story.author}}<br>
-  <img class="home-image" src={{story.image}}>
-{{/link-to}}
+
+<div class="row article-tile">
+  {{#if story.featured}}
+    <div class="featured">
+      {{#link-to 'story' story.id}}
+      <div class="featured-image">
+        <img class="featured-image" src={{story.image}}>
+        <div class="featured-text">
+          {{#link-to 'story' story.id}}
+          {{story.title}}<br>
+          {{/link-to}}
+          {{story.author}}<br>
+          {{story.description}}
+          <div class="background-gradient">
+
+          </div>
+        </div>
+      </div>
+      {{/link-to}}
+    </div>
+  {{else}}
+  <div class="col-md-4 image-box">
+    {{#link-to 'story' story.id}}
+    <img class="home-image" src={{story.image}}>
+    {{/link-to}}
+  </div>
+  <div class="col-md-8 text-box">
+    {{#link-to 'story' story.id}}
+    {{story.title}}<br>
+    {{/link-to}}
+    {{story.author}}<br>
+    {{story.description}}
+  </div>
+  {{/if}}
+</div>
 <hr>
